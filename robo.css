@@ -1,0 +1,225 @@
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100px;
+    font-size: larger;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --black-color: black;
+    --white-color: white;
+    --secondy-color: #004aad;
+}
+
+.to-top{
+
+    background-color: #004aad;
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    pointer-events: none;
+    bottom:2rem;
+    right: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*CABEÇALHO*/
+header{
+    display:flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+} 
+
+header #logo{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#menu ul{
+    display:flex;
+    gap:1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.signUpFree{
+    color: white;
+    background-color: black;
+    border:1px solid black;
+    padding: 0.8rem;
+    border-radius: 0.5rem ;
+    transition: 0.3s;
+    font-weight: 900;
+    
+}
+
+.signUp{
+    color: white;
+    background-color: black;
+    border:1px solid black;
+    padding: 0.8rem;
+    border-radius: 0.5rem ;
+    transition: 0.3s;
+    font-weight: 900;
+    
+
+}
+
+.signUp:hover{
+    color: black;
+    background-color:white;
+
+}
+
+/* TELA DE INÍCIO */
+
+section{
+    border-bottom: 1px solid black;
+}
+
+#homeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text{
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.3rem;
+}
+
+.text h1, .text a {
+    margin: 0rem;
+}
+
+main .photo{
+    width:35rem;
+}
+
+.text p{
+    margin-block: 1.5rem;
+}
+
+main img{
+    width:100%;
+    align-items: center;
+}
+
+#beforeSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#beforeSection .text h1{
+    width: 18rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#beforeSection ul{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+    padding-inline: 0;
+    font-size: 1rem;
+    justify-content: space-evenly;
+}
+
+/*RODAPÉ DO SITE*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    padding: 15px;
+}
+
+footer h1{
+    margin: 0;
+}
+
+footer button{
+    margin: 2px 0px 0px;
+}
+
+footer button:hover{
+    cursor: pointer;
+}
+
+footer img{
+    width: 30%;
+}
+
+/*POSIÇÃO*/
+
+dialog{
+    border: none;
+    border-radius: 0.5rem;
+    width: 30%;
+    height: 50%;
+    box-shadow: 0 0 0.5rem rgb(0 0 0/00.3s)
+}
+
+dialog::backdrop{
+    margin-top: 0;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+#inputDiv {
+    margin: 4rem 0rem 2rem;
+}
+
+#closeButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closeButton:hover{
+    cursor: pointer;
+}
+
+
+
